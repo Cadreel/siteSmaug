@@ -1,0 +1,30 @@
+body{
+	background: rgba(0,0,0,0.8) !important; 
+	color: #756d6d;
+	font-family: "Copperplate Gothic";
+	
+	}
+
+.history_img{
+	margin-top: 20px !important;
+
+}
+
+.parag-personagens, .parag-sinopse, 
+.titulo-personagens, .titulo-sinopse{
+	width: 80% !important;
+	margin-left: 10px !important;
+	text-align: center !important;
+
+
+}
+
+.titulo-personagens, .titulo-sinopse{
+	font-size: 20px;
+
+}
+
+.rodape-pagina  {
+	color: #b7b2b2;
+	font-size: 15px;
+}
