@@ -8,10 +8,10 @@ $plataforma = filter_input(INPUT_POST,'plataforma', FILTER_SANITIZE_STRING);
 $mensagem = filter_input(INPUT_POST,'mensagem', FILTER_SANITIZE_STRING);
 
 
-//echo "Nome: $nome <br>";
-//echo "Email: $email <br>";
-//echo "Obs: $obs <br>";
-//echo "Plataforma: $platforma <br>";
+echo "Nome: $nome <br>";
+echo "Email: $email <br>";
+echo "Obs: $obs <br>";
+echo "Plataforma: $platforma <br>";
 
 $result_usuario = "INSERT INTO dataform (nome, email, plataforma, mensagem, created) VALUES ('$nome', $email, $plataforma, $mensagem, NOW())";
 
