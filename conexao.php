@@ -1,10 +1,10 @@
 <?php
 
-$servidor = "localdb";
-$usuario = "azure";
-$senha = "6#vWHD_$";
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
 $dbname = "forms";
 
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
-?>
+
