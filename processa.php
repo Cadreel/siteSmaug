@@ -10,7 +10,7 @@ $mensagem = filter_input(INPUT_POST,'mensagem', FILTER_SANITIZE_STRING);
 
 echo "Nome: $nome <br>";
 echo "Email: $email <br>";
-echo "Plataforma: $platforma <br>";
+echo "Plataforma: $plataforma <br>";
 echo "Mensagem: $mensagem <br>";
 
 
