@@ -18,7 +18,7 @@ $result_usuario = "INSERT INTO teste_table (nome, email, plataforma, mensagem, c
 
 $resultado_usuario = mysqli_query($conn, $result_usuario);
 
-if (mysqli_connect_errno()){
+if (mysqli_connect()){
 		echo "Failed: " . mysqli_connect_errno();
 
 }else{
