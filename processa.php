@@ -22,7 +22,7 @@ if ($conn->connect_error){
 		echo "Failed: " . mysqli_connect_errno();
 
 }else{
-		echo "Facadinhas:  . $result_usuario";
+		echo "Facadinhas: $result_usuario";
 
 }
 $conn->close();
