@@ -20,12 +20,12 @@ $resultado_usuario = mysqli_query($conn, $result_usuario);
 
 echo "Facadinhas: $resultado_usuario <br>";
 
-if (mysqli_insert_id($conn)){
+/*if (mysqli_insert_id($conn)){
 		header("Location: index.php");
 
 }else{
 		header("Location: index.php");
 
-}
+}*/
 
 
