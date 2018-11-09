@@ -24,7 +24,7 @@ if ($conn->connect_error){
 		echo "Failed: " . $conn->connect_error;
 
 }else{
-	echo "Funfando: $result_usuario <br>";
+	header( "Location: index.php");
 }
 
 $conn->close();
