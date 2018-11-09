@@ -20,10 +20,10 @@ $resultado_usuario = mysqli_query($conn, $result_usuario);
 
 
 if (mysqli_insert_id($conn)){
-		header("Location: index.php");
+		header("Location: contato.php");
 
 }else{
-		header("Location: index.php");
+		header("Location: contato.php");
 
 }
 
