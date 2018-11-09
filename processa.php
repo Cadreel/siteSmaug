@@ -18,12 +18,14 @@ $result_usuario = "INSERT INTO teste_table (nome, email, plataforma, mensagem, c
 
 $resultado_usuario = mysqli_query($conn, $result_usuario);
 
-if (mysqli_connect_errno()){
-		echo "Failed: " . mysqli_connect_errno();
+if ($conn->connect_error){
+		die("Failed: " . $conn->connect_error);
 
+if($conn->query($result_usuario) === TRUE){
+	echo "Conseguimos"
 }else{
-		header("Location: index.php");
-
+	echo "Error" . $result_usuario . "<br>" . $conn->error;
 }
+$conn->close();
 
 
