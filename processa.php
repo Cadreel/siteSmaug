@@ -20,6 +20,11 @@ $resultado_usuario = mysqli_query($conn, $result_usuario);
 
 echo "Facadinhas: $resultado_usuario <br>";
 
+if(mysqli_connect_errno()){
+	echo "Failed: " . mysqli_connect_errno();
+}else{
+	mysqli_query($conn, $result_usuario);
+}
 /*if (mysqli_insert_id($conn)){
 		header("Location: index.php");
 
@@ -28,4 +33,4 @@ echo "Facadinhas: $resultado_usuario <br>";
 
 }*/
 
-
+?>
