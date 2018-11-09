@@ -7,8 +7,8 @@ $dbname = "localdb";
 
 //$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
-$conn=mysqli_init(); [mysqli_ssl_set($conn, NULL, NULL, {ca-cert filename}, NULL, NULL);] 
-mysqli_real_connect($conn, $servidor, $usuario, $senha, $dbname, 80);
+$conn=mysqli_init(); [mysqli_ssl_set($conn, NULL, NULL, NULL, NULL, NULL);] 
+mysqli_real_connect($conn, $servidor, $usuario, $senha, $dbname, NULL);
 
 
 ?>
