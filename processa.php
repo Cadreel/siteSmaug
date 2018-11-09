@@ -8,26 +8,32 @@ $plataforma = filter_input(INPUT_POST,'plataforma', FILTER_SANITIZE_STRING);
 $mensagem = filter_input(INPUT_POST,'mensagem', FILTER_SANITIZE_STRING);
 
 
-/*echo "Nome: $nome <br>";
+echo "Nome: $nome <br>";
 echo "Email: $email <br>";
 echo "Plataforma: $plataforma <br>";
-echo "Mensagem: $mensagem <br>";*/
+echo "Mensagem: $mensagem <br>";
 
 
 $result_usuario = "INSERT INTO teste_table (nome, email, plataforma, mensagem, created) VALUES ('$nome', '$email', '$plataforma', '$mensagem', NOW())";
 
-$resultado_usuario = mysqli_query($conn, $result_usuario);
+//$resultado_usuario = mysqli_query($conn, $result_usuario);
 
-
-
-if ($conn->connect_error){
-		echo "Failed: " . $conn->connect_error;
-
+if(isset($_POST["submit"])){
+	$nome = $_POST['nome'];
+	$email = $_POST['email'];
+	$plataforma = $_POST['plataforma'];
+	$mensagem = $_POST['mensagem'];
+	$resultado_usuario = mysqli_query($conn, $result_usuario);
 }else{
-	header( "Location: index.php");
+	die("<br/>Não funfou: " . mysql_error());
 }
 
-$conn->close();
-?>
+/*if (mysqli_insert_id($conn)){
+		header("Location: index.php");
+
+}else{
+		header("Location: index.php");
+
+}*/
 
 
