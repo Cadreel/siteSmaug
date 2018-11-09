@@ -11,7 +11,7 @@ $mensagem = filter_input(INPUT_POST,'mensagem', FILTER_SANITIZE_STRING);
 
 
 
-$result_usuario = "INSERT INTO teste_tabela (nome, email, plataforma, mensagem, data) VALUES ('$nome', '$email', '$plataforma', '$mensagem', NOW())";
+$result_usuario = "INSERT INTO teste_table (nome, email, plataforma, mensagem, data) VALUES ('$nome', '$email', '$plataforma', '$mensagem', NOW())";
 
 $resultado_usuario = mysqli_query($conn, $result_usuario);
 
