@@ -21,6 +21,8 @@ $resultado_usuario = mysqli_query($conn, $result_usuario);
 if ($conn->connect_error){
 		echo "Failed: " . $conn->connect_error;
 
+}else{
+	echo "Funfando";
 }
 
 $conn->close();
