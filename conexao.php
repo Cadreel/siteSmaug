@@ -1,9 +1,9 @@
 <?php
 
-$servidor = "127.0.0.1";
-$usuario = "azure";
-$senha = "6#vWHD_$";
-$dbname = "localdb";
+$servidor = "localhost";
+$usuario = "root";
+$senha = "";
+$dbname = "testebd";
 
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
