@@ -14,10 +14,10 @@ echo "Plataforma: $plataforma <br>";
 echo "Mensagem: $mensagem <br>";
 
 
-$result_usuario = "INSERT INTO teste_table (nome, email, plataforma, mensagem, created) VALUES ('$nome', $email, $plataforma, $mensagem, NOW())";
+$result_usuario = "INSERT INTO teste_table (nome, email, plataforma, mensagem, created) VALUES ('$nome', '$email', '$plataforma', '$mensagem', NOW())";
 
 $resultado_usuario = mysqli_query($conn, $result_usuario);
-
+echo "Facadinhas: $resultado_usuario <br>";
 if (mysqli_insert_id($conn)){
 		header("Location: index.php");
 
