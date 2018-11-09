@@ -16,24 +16,15 @@ echo "Mensagem: $mensagem <br>";
 
 $result_usuario = "INSERT INTO teste_table (nome, email, plataforma, mensagem, created) VALUES ('$nome', '$email', '$plataforma', '$mensagem', NOW())";
 
-//$resultado_usuario = mysqli_query($conn, $result_usuario);
+$resultado_usuario = mysqli_query($conn, $result_usuario);
 
-if(isset($_POST["submit"])){
-	$nome = $_POST['nome'];
-	$email = $_POST['email'];
-	$plataforma = $_POST['plataforma'];
-	$mensagem = $_POST['mensagem'];
-	$resultado_usuario = mysqli_query($conn, $result_usuario);
+
+if (mysqli_insert_id($conn)){
+		header("Location: index.php");
+
 }else{
-	die("<br/>Não funfou: " . mysql_error());
+		header("Location: index.php");
+
 }
-
-/*if (mysqli_insert_id($conn)){
-		header("Location: index.php");
-
-}else{
-		header("Location: index.php");
-
-}*/
 
 
