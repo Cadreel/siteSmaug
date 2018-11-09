@@ -27,5 +27,6 @@ if($conn->query($result_usuario) === TRUE){
 	echo "Error" . $result_usuario . "<br>" . $conn->error;
 }
 $conn->close();
+?>
 
 
