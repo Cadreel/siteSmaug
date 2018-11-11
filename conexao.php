@@ -3,7 +3,7 @@
 $CONNECTION_STRING = getenv("MYSQLCONNSTR_MINHACONEXAO");
 
 if(!$CONNECTION_STRING){
-    $CONNECTION_STRING = "Data Source=localhost;Database=form_contato;User Id=root;Password=";
+    $CONNECTION_STRING = "Data Source=localhost;Database=localdb;User Id=root;Password=";
 }
 
 function get_parameter($parameter_name, $connection_string){
