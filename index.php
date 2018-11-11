@@ -1,12 +1,29 @@
-<html lang = "pt-br">
+<html>
 	<head>
-		<meta charset="utf-8">
-		<title> TESTE FORM </title>
+		<Title> Contatos </Title>
+		<style type="text/css">
+		body { background-color: #fff; border-top: solid 10px #000;
+				color: #333; font-size: .85em; margin: 20; padding: 20;
+				font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+		}
+		h1, h2, h3, {color: #000; margin-bottom: 0; padding-bottom: 0; }
+		h1 {font-size: 2em; }
+		h2 {font-size: 1.75em; }
+		h3 {font-size: 1.2em; }
+		table {margin-top: 0.75em; }
+		th {font-size: 1.2em; text-align: left; border: none; padding-left: 0; }
+		td {padding: 0.25em 2em 0.25em 0em; border: 0 none; }
+		</style>
 	</head>
 	<body>
 		<h1>Digue</h1>
-		<form method="post" action="index.php">
-			<label>Nome:</label>
+		<form method="post" action="index.php" enctype="multipart/form-data">
+			Nome <input type="text" name="nome" id="nome"/><br><br>
+			Email <input type="email" name="email" id="email"/><br><br>
+			Plataforma <input type="text" name="plataforma" id="plataforma"/><br><br>
+			Mensagem <input type="textarea" name="mensagem" id="mensagem"/><br><br>
+			<input type="submit" name="assinar" value="Assinar"/>
+			<!--<label>Nome:</label>
 			<input type="text" name="nome" placeholder="Richard Belmont"><br><br>
 			
 			<label>Email:</label>
@@ -18,7 +35,7 @@
 			<label>Mensagem</label>
 			<input type="text" name="mensagem" placeholder="I will find..."><br><br>
 			
-			<input type="submit" value="Enviar">
+			<input type="submit" value="Enviar">-->
 		</form>
 		<?php
 		require_once("conexao.php");
@@ -54,10 +71,10 @@
 			echo "<h2> Pessoas que colocaram o contato:</h2>";
 			echo "<table>";
 			echo "<tr><th>Nome</th>";
-			echo "<tr><th>Email</th>";
-			echo "<tr><th>Plataforma</th>";
-			echo "<tr><th>Mensagem</th>";
-			echo "<tr><th>Data</th></tr>";
+			echo "<th>Email</th>";
+			echo "<th>Plataforma</th>";
+			echo "<th>Mensagem</th>";
+			echo "<th>Data</th></tr>";
 
 			foreach ($contatos as $contato) {
 				echo "<tr><td>".$contato['nome']."</td>";
