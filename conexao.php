@@ -1,11 +1,27 @@
 <?php
 
-$servidor = "localhost";
+/*$servidor = "localhost";
 $usuario = "root";
 $senha = "";
 $dbname = "testebd";
 
-$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);*/
+
+$CONNECTION_STRING = getenv("MYSQLCONNSTR_SMAUGSERVER");
+
+if($CONNECTION_STRING){
+    $CONNECTION_STRING = "Data Source= devhost.com;Database=teste_banco_dados;User Id=root;Password= ";
+}
+
+function get_parameter($parameter_name, $connection_string){
+    preg_match_all("/$parameter_name=(.*?)(;|$)/s", $connection_string, $matches);
+    return $matches[1][0];
+}
+
+$DB_USER = get_parameter("User Id", $CONNECTION_STRING);
+$DB_HOST = get_parameter("Data Source", $CONNECTION_STRING);
+$DB_PASSWORD = get_parameter("Password", $CONNECTION_STRING);
+$DB_DATABASE = get_parameter("Database", $CONNECTION_STRING);
 
 
 ?>
