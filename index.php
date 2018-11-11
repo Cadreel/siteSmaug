@@ -61,10 +61,10 @@
 			}catch(Exception $e){
 				die(var_dump ($e));
 			}
-			echo "<h3> Você inseriu o contato</h3>";
+			echo "<h3> OBIRGADO! Você inseriu o contato</h3>";
 		}
 
-		$stmt = $conn->query('SELECT * FROM contatos');
+		/*$stmt = $conn->query('SELECT * FROM contatos');
 		$contatos = $stmt->fetchAll();
 
 		if(count($contatos)){
@@ -86,7 +86,7 @@
 			echo "</table>";
 		}else{
 			echo "<h3>Não tem nenhum contato</h3>";
-		}
+		}*/
 		?>
 			
 	</body>
