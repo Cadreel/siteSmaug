@@ -18,7 +18,7 @@
         </tr>
         <?php
         include("conexao.php");
-        $seleciona=mysqli_query($conn, "SELECT * FROM teste_table order by id desc");
+        $seleciona=mysqli_query($CONNECTION_STRING, "SELECT * FROM testebd order by id desc");
         while($campo=mysqli_fetch_array($seleciona)){?>
             <tr>
                 <td><?=$campo["nome"]?></td>

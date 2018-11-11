@@ -22,7 +22,7 @@ echo "Mensagem: $mensagem <br>";*/
 //echo "Nome: $nome <br>";
 
 
-header("Location: index.php");
+header("Location: lista.php");
 
 
 
