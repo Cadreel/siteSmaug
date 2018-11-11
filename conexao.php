@@ -1,12 +1,5 @@
 <?php
 
-/*$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$dbname = "testebd";
-
-$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);*/
-
 $CONNECTION_STRING = getenv("MYSQLCONNSTR_MINHACONEXAO");
 
 if(!$CONNECTION_STRING){

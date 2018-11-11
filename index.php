@@ -18,12 +18,12 @@
 	<body>
 		<h1>Digue</h1>
 		<form method="post" action="index.php" enctype="multipart/form-data">
-			Nome <input type="text" name="nome" id="nome"/><br><br>
+			<!--Nome <input type="text" name="nome" id="nome"/><br><br>
 			Email <input type="email" name="email" id="email"/><br><br>
 			Plataforma <input type="text" name="plataforma" id="plataforma"/><br><br>
 			Mensagem <input type="textarea" name="mensagem" id="mensagem"/><br><br>
-			<input type="submit" name="assinar" value="Assinar"/>
-			<!--<label>Nome:</label>
+			<input type="submit" name="assinar" value="Assinar"/>-->
+			<label>Nome:</label>
 			<input type="text" name="nome" placeholder="Richard Belmont"><br><br>
 			
 			<label>Email:</label>
@@ -35,7 +35,7 @@
 			<label>Mensagem</label>
 			<input type="text" name="mensagem" placeholder="I will find..."><br><br>
 			
-			<input type="submit" value="Enviar">-->
+			<input type="submit" value="Enviar">
 		</form>
 		<?php
 		require_once("conexao.php");
