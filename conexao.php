@@ -10,7 +10,7 @@ $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);*/
 $CONNECTION_STRING = getenv("MYSQLCONNSTR__MINHACONEXAO");
 
 if(!$CONNECTION_STRING){
-    $CONNECTION_STRING = "Data Source=devhost.com;Database=form_contato;User Id=root;Password= ";
+    $CONNECTION_STRING = "Data Source=oultimoseloserver.mysql.database.azure.com;Database=form_contato;User Id=exodia@oultimoseloserver;Password=mi18wa31@ ";
 }
 
 function get_parameter($parameter_name, $connection_string){
