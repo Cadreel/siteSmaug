@@ -1,6 +1,6 @@
-<?php
+/*<?php
 
-include("conexao.php");
+/*include("conexao.php");
 
 $nome = filter_input(INPUT_POST,'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST,'email', FILTER_SANITIZE_EMAIL);
@@ -36,6 +36,6 @@ header("Location: lista.php");
 
 }*/
 
-?>
+?>*/
 
 
